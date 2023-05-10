@@ -12,21 +12,21 @@ http.createServer(function (req, res) {
             WELCOME TO JAVASCRIPT APPLICATIONS!!</h1> 
    <h3 style="text-align:center;"> Click on any of the below JavaScript apps!</h3>
    <div class="parent"> <ul>
-        <li><a href='/calculator'>Calculator</a></li> 
-       <li><a href='/maze'>Maze</a></li>
-        <li><a href='/tic_tac_toe'>Tic-tac-toe</a></li>
-        <li><a href='/clock'>Analogue clock</a></li>
-        <li><a href='/python'>Python</a></li>
-        <li><a href='/hangman'>Hangman</a></li>
-        <li><a href='/puzzles'>Puzzles</a></li>
-        <li><a href='/sudoku'>Sudoku</a></li>
-        <li><a href='/virtual_keyboard'>Virtual keyboard</a></li>
-	<li><a href='/solitaire'>Solitaire</a></li>
-	<li><a href='/chess'>Chess</a></li>
-	<li><a href='/dino'>Dino</a></li>
-	<li><a href='/sass_'>Sass</a></li>
-	<li><a href='/tilt_maze'>Tilted Maze</a></li>
-	<li><a href='/codepen'>Codepen</a></li>
+        <li><a href='/script/calculator'>Calculator</a></li> 
+       <li><a href='/script/maze'>Maze</a></li>
+        <li><a href='/script/tic_tac_toe'>Tic-tac-toe</a></li>
+        <li><a href='/script/clock'>Analogue clock</a></li>
+        <li><a href='/script/python'>Python</a></li>
+        <li><a href='/script/hangman'>Hangman</a></li>
+        <li><a href='/script/puzzles'>Puzzles</a></li>
+        <li><a href='/script/sudoku'>Sudoku</a></li>
+        <li><a href='/script/virtual_keyboard'>Virtual keyboard</a></li>
+	<li><a href='/script/solitaire'>Solitaire</a></li>
+	<li><a href='/script/chess'>Chess</a></li>
+	<li><a href='/script/dino'>Dino</a></li>
+	<li><a href='/script/sass_'>Sass</a></li>
+	<li><a href='/script/tilt_maze'>Tilted Maze</a></li>
+	<li><a href='/script/codepen'>Codepen</a></li>
    </ul> </div> 
        </div> </body> </html>
     `);

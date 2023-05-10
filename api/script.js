@@ -4,7 +4,7 @@ const { spawn } = require('child_process');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   //Return the url part of the request object:
-  if(req.url=="/"){
+  if(req.url=="/script/"){
     res.write(`
 <!DOCTYPE html> <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1"> <style> body, html { height: 100%; margin: 0; } .content { position: absolute; top: 15%; left:25%; background: rgb(0, 0, 0); /* Fallback color */ background: rgba(0, 0, 0, 0.76); /* Black background with 0.5 opacity */ color: #f1f1f1; width: 50%; padding: 20px; } .bg { /* The image used */ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRqNquWxQHJAPgugDwzXokAU_dQUXzknUTA&usqp=CAU"); /* Full height */ height: 100%; /* Center and scale the image nicely */ background-position: center; background-repeat: no-repeat; background-size: cover; } table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } div.parent { text-align: center; } ul { display: inline-block; text-align: left; }</style>
     </head> <body> <div class="bg"></div>  <div class="content"> <h1 id="home" 
@@ -32,7 +32,7 @@ http.createServer(function (req, res) {
     `);
   }
 
-  else if(req.url=="/python"){
+  else if(req.url=="/script/python"){
     var child = spawn("python", ["-c",`
 print("Enter a number:")
 `
@@ -46,7 +46,7 @@ print("Enter a number:")
   cascade()
   }
 
-  else if(req.url=="/chess"){res.write(`
+  else if(req.url=="/script/chess"){res.write(`
 <!DOCTYPE html>
 <html>
 
@@ -1256,7 +1256,7 @@ print("Enter a number:")
     </html>
     `)}
 
-  else if(req.url=="/calculator"){res.write(`
+  else if(req.url=="/script/calculator"){res.write(`
         <html>
     <head>
     <style>
@@ -1496,7 +1496,7 @@ print("Enter a number:")
     </html>
     `)}
 
-  else if(req.url=="/maze"){res.write(`
+  else if(req.url=="/script/maze"){res.write(`
 <html lang="en-GB">
     <head>
       <meta charset="utf-8">
@@ -2295,7 +2295,7 @@ print("Enter a number:")
     </html>
     `)}
 
-  else if(req.url=="/sass_"){res.write(`
+  else if(req.url=="/script/sass_"){res.write(`
 <!DOCTYPE html>
 <html>
     <head>
@@ -2338,7 +2338,7 @@ body{
 </html>
     `)}
 
-  else if(req.url=="/codepen"){res.write(`
+  else if(req.url=="/script/codepen"){res.write(`
 <!DOCTYPE html>
 <html>
 <head>
@@ -2395,7 +2395,7 @@ body{
 </html>
 `)}
 
-  else if(req.url=="/tilt_maze"){res.write(`
+  else if(req.url=="/script/tilt_maze"){res.write(`
 <!DOCTYPE html>
 <html>
 <head>
@@ -3370,7 +3370,7 @@ function main(timestamp) {
 </html>
 `)}
 
-  else if(req.url=="/dino"){res.write(`
+  else if(req.url=="/script/dino"){res.write(`
     
 <html>
 
@@ -6001,7 +6001,7 @@ html[subframe] body {
 </html>
 `)}
 
-  else if(req.url=="/solitaire"){res.write(`
+  else if(req.url=="/script/solitaire"){res.write(`
 <html>
 <head>
         <meta name="viewport" id="metaWidth" content="width=530,user-scalable=no">
@@ -7568,7 +7568,7 @@ html[subframe] body {
 
     `)}
 
-  else if(req.url=="/sudoku"){res.write(`
+  else if(req.url=="/script/sudoku"){res.write(`
     <html>
 <head>
     <!-- Copyright (c) Microsoft Corporation. All Rights Reserved. -->
@@ -9356,7 +9356,7 @@ addEventListener('DOMContentLoaded', initialize, false);
 </html>
     `)}
 
-  else if(req.url=="/puzzles"){res.write(`
+  else if(req.url=="/script/puzzles"){res.write(`
 <!DOCTYPE html>
 <html>
 <head>
@@ -9619,7 +9619,7 @@ return this;
 </html>
 `)}
 
-  else if(req.url=="/tic_tac_toe"){res.write(`<!doctype html>
+  else if(req.url=="/script/tic_tac_toe"){res.write(`<!doctype html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9751,7 +9751,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
     </body>`)}
 
 
-  else if(req.url=="/clock"){res.write(`
+  else if(req.url=="/script/clock"){res.write(`
     
 <!DOCTYPE html>
 <html lang="en">
@@ -9871,7 +9871,7 @@ function drawHand(ctx, pos, length, width){
 </body>
     ` )}
 
-else if(req.url=="/hangman"){res.write(`
+else if(req.url=="/script/hangman"){res.write(`
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10054,7 +10054,7 @@ startGame()
 </html>
     ` )}
 
-    else if(req.url=="/virtual_keyboard"){res.write(`<!DOCTYPE html>
+    else if(req.url=="/script/virtual_keyboard"){res.write(`<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">

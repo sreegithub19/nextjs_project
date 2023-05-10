@@ -9,8 +9,8 @@
       "dest": "/api/index.py"
     },
     {
-      "src": "/index/(.*)",
-      "dest": "index.js"
+      "src": "/script/(.*)",
+      "dest": "/api/script.js"
     }
   ]
 }

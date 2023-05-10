@@ -3,6 +3,10 @@
     {
       "src": "/hello",
       "dest": "/api/hello.js"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.py"
     }
   ]
 }

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "vercel deploy --prod"
   },
   "dependencies": {
     "eslint": "8.39.0",
@@ -14,5 +15,9 @@
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/sreegithub19/nextjs_project.git",
+  "author": "<sreedhar.k@rakuten.com>",
+  "license": "MIT"
 }

@@ -5,16 +5,12 @@
       "dest": "/api/hello.js"
     },
     {
-      "src": "/api/python/(.*)",
+      "src": "/api/(.*)",
       "dest": "/api/index.py"
     },
     {
       "src": "/script/(.*)",
       "dest": "/api/script.js"
-    },
-    {
-      "src": "/api/go/(.*)",
-      "dest": "/api/entrypoint.go"
     }
   ]
 }

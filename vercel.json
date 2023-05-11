@@ -11,6 +11,10 @@
     {
       "src": "/script/(.*)",
       "dest": "/api/script.js"
+    },
+    {
+      "src": "/go/(.*)",
+      "dest": "/api/entrypoint.go"
     }
   ]
 }
